@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>jQuery test page</title>
+  <style>
+  .highlight {background: yellow;}
+  </style>
 </head>
 <body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -63,7 +66,19 @@ function noSubhed(){
   function undo(){
     $('h2').show();
     $('h3').show();
-  }
+  };
+  </script>
+  <script>
+function highlightByline(){
+
+  $('.byline').addClass('highlight');
+};
+  </script>
+
+  <script>
+function unHighlightByline(){
+  $('.byline').removeClass('highlight');
+};
   </script>
 
 
